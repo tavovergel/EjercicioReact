@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=}, initial-scale=1.0">
+    <title>REACT</title>
+</head>
+<body>
+    <script>
+    function Video({ video }) {
+        return (
+          <div>
+            <Thumbnail video={video} />
+            <a href={video.url}>
+              <h3>{video.title}</h3>
+              <p>{video.description}</p>
+            </a>
+            <LikeButton video={video} />
+          </div>
+        );
+      }
+    </script>
+    <div id="app"></div>
+    
+</body>
+</html>
+
+
